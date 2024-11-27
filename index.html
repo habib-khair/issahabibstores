@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>اسم الشركة</title>
+
+    <!-- Link to Google Fonts (Alilato font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Alilato:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Alilato', sans-serif; /* Use Alilato font */
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            direction: rtl; /* Right-to-left for Arabic */
+            text-align: right;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #0a5b6e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #2f3c44;
+            padding: 10px 0;
+            position: relative;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #027b8d;
+        }
+
+        /* Mobile hamburger menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            color: white;
+            font-size: 2em;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                text-align: right;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            nav ul.show {
+                display: block;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #0a5b6e;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .contact-form button:hover {
+            background-color: #027b8d;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #0a5b6e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer p {
+            font-size: 1.1em;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>اسم الشركة</h1>
+    <p>الشعار الخاص بالشركة هنا</p>
+</header>
+
+<!-- Navigation Bar with Hamburger Menu -->
+<nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+        <li><a href="#about">عن الشركة</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>عن الشركة</h2>
+    <p>نحن شركة متخصصة في تقديم الحلول الاستراتيجية المبتكرة لمساعدة الشركات والأفراد في تحقيق أهدافهم. نحن نركز على تقديم خدمة عالية الجودة مع التفاني في العمل.</p>
+</section>
+
+<section id="services">
+    <h2>خدماتنا</h2>
+    <p>نحن نقدم مجموعة متنوعة من الخدمات مثل تطوير المواقع الإلكترونية، التسويق الرقمي، والاستشارات التجارية. فريقنا المتخصص يعمل بكل جهد لتحقيق نتائج متميزة لعملائنا.</p>
+</section>
+
+<section id="contact">
+    <h2>اتصل بنا</h2>
+    <p>إذا كنت ترغب في معرفة المزيد عن خدماتنا أو التواصل معنا، يمكنك الاتصال بنا عبر النموذج أدناه أو من خلال قنوات التواصل الاجتماعي الخاصة بنا.</p>
+    <div class="contact-form">
+        <form id="contact-form" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="الاسم" required>
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+            <textarea id="message" placeholder="رسالتك" rows="4" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 اسم الشركة. جميع الحقوق محفوظة.</p>
+    <p><a href="mailto:info@company.com">تواصل معنا عبر البريد الإلكتروني</a></p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Toggle navigation menu for mobile
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    }
+
+    // Simple form validation
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === "" || email === "" || message === "") {
+            alert("من فضلك أكمل جميع الحقول.");
+            return false;
+        }
+
+        alert("تم إرسال رسالتك بنجاح.");
+        return true;  // Form will be submitted (simulated here with alert)
+    }
+</script>
+
+</body>
+</html>
